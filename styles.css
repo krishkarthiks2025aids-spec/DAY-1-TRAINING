@@ -1,0 +1,30 @@
+
+button {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+body {
+    background-color: red;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+
+body.phone {
+    background-color: blue;
+}
+
+
+body.email {
+    background-color: yellow;
+}
+
+
+body.address {
+    background-color: green;
+}

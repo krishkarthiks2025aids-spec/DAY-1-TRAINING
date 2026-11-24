@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My DETAILS </title>
+
+    <style>
+        body {
+            background-color: red;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>KRISH KARTHIK</h2>
+
+    <button onclick="showDetails('phone')">Contact Number</button>
+    <button onclick="showDetails('email')">Email</button>
+    <button onclick="showDetails('address')">Address</button>
+
+    <h3 id="details"></h3>
+
+    <script>
+        function showDetails(type) {
+
+            if (type == 'phone') {
+                document.body.style.backgroundColor = "blue";
+                document.getElementById("details").innerHTML = "Contact Number: 9445645268";
+            }
+
+            else if (type == 'email') {
+                document.body.style.backgroundColor = "yellow";
+                document.getElementById("details").innerHTML = "Email: krishkarthik.s202aids@sece.ac.in";
+            }
+
+            else if (type == 'address') {
+                document.body.style.backgroundColor = "green";
+                document.getElementById("details").innerHTML = "Address: 55 Mulla Street, Lakshmi Nagar, Tiruppur";
+            }
+        }
+    </script>
+
+</body>
+</html>

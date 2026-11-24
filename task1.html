@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My DETAILS</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <h1>KRISH KARTHIK</h1>
+
+    <button onclick="showDetails('phone')" class="phone">Contact Number</button>
+    <button onclick="showDetails('email')" class="email">Email</button>
+    <button onclick="showDetails('address')" class="address">Address</button>
+
+    <p id="details"></p>
+
+    <script>
+        function showDetails(type) {
+            document.body.className = type;
+
+            if (type == 'phone') {
+                document.getElementById("details").innerHTML = "Contact Number: 9445645268";
+            }
+            else if (type == 'email') {
+                document.getElementById("details").innerHTML = "Email: krishkarthik.s202aids@sece.ac.in";
+            }
+            else if (type == 'address') {
+                document.getElementById("details").innerHTML = "Address: 55 Mulla Street, Lakshmi Nagar, Tiruppur";
+            }
+        }
+    </script>
+
+</body>
+</html>
